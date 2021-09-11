@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>personal portfolio</title>
+</head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Glory:wght@100;200&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+<div class="main">
+<nav>
+  <input id="nav-toggle" type="checkbox">
+  <div class="logo">SUJAN CHAUDHARY</div>
+  <ul class="links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skill">Skill</a></li>
+    <li><a href="#testimonial">Testimonials</a></li>
+    <li><a href="#service">Our Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <label for="nav-toggle" class="icon-burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </label>
+</nav>
+<section class="home" id="home">
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide" data-swiper-autoplay="5000" style="background-image: url(17.jpeg);"></div>
+    <div class="swiper-slide" data-swiper-autoplay="5000" style="background-image: url(3.jpg);"></div>
+    <div class="swiper-slide" data-swiper-autoplay="5000" style="background-image: url(4.jpg);"></div>
+    <div class="swiper-slide" data-swiper-autoplay="5000" style="background-image: url(7.jpeg);"></div>
+    <div class="swiper-slide" data-swiper-autoplay="5000" style="background-image: url(9.jpeg);"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+
+</div>
+</div>
+</section> 
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+  effect: 'flip',
+  flipEffect: {
+    slideShadows: false,
+  },
+   autoplay: {
+   delay: 5000,
+ },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  //scroll effect
+  grabCursor: true,
+  
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+<section class="about" id="about">
+    <div class="abouts container">
+      <h1>About</h1>
+      <hr size="1" width="100%" color="white"> 
+      <h3>Know more about <span>Sujan Chaudhary</span></h3>
+      <div class="columns">
+        <div class="col" id="left">
+          <img src="12.jpeg">
+        </div>
+        <div class="col" id="right">
+          <h2>Front End Developer</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere.</p>
+        <div class="list">
+          <ul class="l1">
+            <li>Birthday: 3 june 2000</li>
+            <li>website:www.weweew.np</li>
+            <li>Phone: 980000000</li>
+            <li>Itahari-19, Mahuliya, Nepal</li>
+          </ul>
+          <ul class="l2">
+            <li>Age: 21</li>
+            <li>Education: BSc(hons)Computing</li>
+            <li>Hobby: Traveling & Video Editing</li>
+            <li>College: Itahari International College(IIC)</li>
+          </ul>
+          
+        </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere. Duis vitae velit enim. Vivamus tempor est in blandit commodo. Cras cursus ullamcorper eros, quis fringilla orci molestie et. Cras nibh ipsum, rutrum vitae nisi sit amet, porttitor pharetra leo. Curabitur tincidunt egestas mauris non ultricies. Praesent sed dictum sem. In maximus risus eget odio eleifend hendrerit.</p>
+    <div class="button">
+          <a href="https://www.youtube.com/channel/UC1v2ETDIK-A6fk8FhxdYW-w">Watch Videos</a>
+    </div>
+        </div>
+      </div>
+    </div>
+    
+</section>
+<!--------------skills section----------------->
+<section class="skill" id="skill">
+<div class="container skills">
+  <h1>My Skills</h1>
+<div class="skillflex">
+  <div class="technical">
+    <h2>Technical Skills</h2>
+  <ul class="box">
+    <li>
+      <h5>HTML (95%)</h5>
+      <span class="bar bar1"></span>
+    </li>
+    <li>
+      <h5>PHP (55%)</h5>
+      <span class="bar bar2"></span>
+    </li>
+    <li>
+      <h5>CSS (85%)</h5>
+      <span class="bar bar3"></span>
+    </li>
+    <li>
+      <h5>JAVASCRIPT (67%)</h5>
+      <span class="bar bar4"></span>
+    </li>
+  </ul>
+</div>
+<div class="professional">
+  <h2>Professional skills</h2>
+  <ul class="box2">
+    <li>
+      <h5>Communication (75%)</h5>
+      <span class="bar bar5"></span>
+    </li>
+    <li>
+      <h5>Team work (95%)</h5>
+      <span class="bar bar6"></span>
+    </li>
+    <li>
+      <h5>Presentation (69%)</h5>
+      <span class="bar bar7"></span>
+    </li>
+    <li>
+      <h5>Creativity (81%)</h5>
+      <span class="bar bar8"></span>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="testimonial" id="testimonial">
+  <h1>Testimonial</h1>
+  <div class="container">
+    <hr size="1" width="100%" color="white">
+  <div class="main-carousel">
+    <div class="cell">
+      <img src="7.jpeg">
+      <h2>Sujan Chaudhary</h2>
+      <h5>Full Stack developer</h5>
+      <p class="social">
+        <i class="fa fa-facebook fa-2x"></i>
+        <i class="fa fa-instagram fa-2x"></i>
+        <i class="fa fa-youtube fa-2x"></i>
+        <i class="fa fa-twitter fa-2x"></i>
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere. Duis vitae velit enim.</p>
+    </div>
+    <div class="cell">
+      <img src="m.jpg">
+      <h2>Manish Rajbanshi</h2>
+      <h5>Backend developer</h5>
+      <p class="social">
+        <i class="fa fa-facebook fa-2x"></i>
+        <i class="fa fa-instagram fa-2x"></i>
+        <i class="fa fa-youtube fa-2x"></i>
+        <i class="fa fa-twitter fa-2x"></i>
+      </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere. Duis vitae velit enim.</p>
+    </div>
+    <div class="cell">
+      <img src="h.jpg">
+      <h2>Hemraj Dhakal</h2>
+      <h5>Data Scientist</h5>
+      <p class="social">
+        <i class="fa fa-facebook fa-2x"></i>
+        <i class="fa fa-instagram fa-2x"></i>
+        <i class="fa fa-youtube fa-2x"></i>
+        <i class="fa fa-twitter fa-2x"></i>
+      </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere. Duis vitae velit enim.</p>
+    </div>
+    <div class="cell">
+      <img src="s.jpg">
+      <h2>Sujan Khatri</h2>
+      <h5>Chatered Accountant(C.A)</h5>
+      <p class="social">
+        <i class="fa fa-facebook fa-2x"></i>
+        <i class="fa fa-instagram fa-2x"></i>
+        <i class="fa fa-youtube fa-2x"></i>
+        <i class="fa fa-twitter fa-2x"></i>
+      </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere. Duis vitae velit enim.</p>
+    </div>
+</div>
+  </div>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  wrapAround:true,
+  draggable: false,
+  autoPlay:2000,
+  freeScroll:true
+});
+  </script>
+</section>
+<section class="our-service" id="service">
+   <div class="container">
+    <h1>Our Services</h1>
+   <hr size="1" width="100%" color="white">
+    <div class="service-main">
+      <div class="service-box">
+        <div class="icon">
+          <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+        </div>
+          <h3>Web Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere.</p>
+      </div>  
+      <div class="service-box">
+        <div class="icon">
+          <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+        </div>
+          <h3>UI/UX</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere.</p>
+      </div>  
+      <div class="service-box">
+        <div class="icon">
+         <i class="fa fa-video-camera fa-2x" aria-hidden="true"></i>
+        </div>
+          <h3>Video Editing</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere.</p>
+      </div>  
+      <div class="service-box">
+        <div class="icon">
+          <i class="fa fa-camera fa-2x" aria-hidden="true"></i>
+        </div>
+          <h3>Photography</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere.</p>
+      </div>  
+      <div class="service-box">
+        <div class="icon">
+          <i class="fa fa-creative-commons fa-2x" aria-hidden="true"></i>
+        </div>
+          <h3>Content Creation</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere.</p>
+      </div>  
+      <div class="service-box">
+        <div class="icon">
+          <i class="fa"></i>
+        </div>
+          <h3>web design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere.</p>
+      </div>  
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="content">
+    <h2>Contact Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi. Phasellus non purus rutrum, efficitur libero nec, commodo nisi. Sed malesuada aliquet urna vel posuere.</p>
+  </div>
+  <div class="container contacts">
+    <div class="contact-info">
+      <div class="box">
+        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div class="text">
+          <h3>Address</h3>
+          <p>Itahari-19, mahuliya, Sunsari, Nepal</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+        <div class="text">
+          <h3>Phone</h3>
+          <p>9824387258</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+        <div class="text">
+          <h3>Email</h3>
+          <p>sujanchaudharyit69@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="contactForm">
+      <form>
+        <h2>Send Message</h2>
+        <div class="inputBox">
+            <input type="text" name="" required="required">
+            <span>Full Name</span>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="" required="required">
+            <span>Email</span>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="" required="required">
+            <span>Message</span>
+        </div>
+        <div class="inputBox">
+            <input type="submit" name="" value="send">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-content">
+    <img src="7.jpeg">
+    <h3>Sujan Chaudhary</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget eleifend lacus, eu mollis mi.</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>        
+        <li><a href="#"><i class="fa fa-google"></i></a></li>   
+      </ul>
+      <ul class="footnav">
+        <li><a href="#home"><i class="fa fa-home">Home</i></a></li>
+        <li><a href="#about"><i class="fa fa-user">About</i></a></li>
+        <li><a href="#skill"><i class="fa fa-book">Skills</i></a></li>
+        <li><a href="#testimonial"><i class="fa fa-quote-left">Testimonial</i></a></li>        
+        <li><a href="#contact"><i class="fa fa-phone">Contact</i></a></li>   
+      </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>copyright reserved @2021 & desinged by Sujan Chaudhary</p>
+  </div>
+ </footer>
+</body>
+</html>
